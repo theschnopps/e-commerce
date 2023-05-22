@@ -264,6 +264,7 @@ button:active {
 
 .highlight__wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .highlight {
@@ -271,7 +272,6 @@ button:active {
     width: calc(100% / 3);
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -296,6 +296,7 @@ button:active {
 .highlight__subtitle {
     font-size: 20px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 /* FEATURES */
@@ -419,5 +420,11 @@ footer {
     }
     .btn__menu {
         display: block;
+    }
+    .highlight {
+        width: 100%;
+    }
+    .highlight:not(:last-child) {
+        margin-bottom: 24px;
     }
 }
