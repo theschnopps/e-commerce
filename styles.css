@@ -404,6 +404,9 @@ footer {
     button {
         font-size: 18px;
     }
+    .books {
+        flex-wrap: wrap;
+    }
     .book {
         width: 50%;
     }
